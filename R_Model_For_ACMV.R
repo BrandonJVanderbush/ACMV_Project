@@ -67,7 +67,7 @@ lines(result$ct,result$cI,type="l", col="red", lwd=1)
 #Adds the infected line, which is red
 lines(result$ct,result$cN,type="l", col="green",lwd=1)
 #Adds the total population at each time step
-  legend("left",legend=c("Susceptible", "Infectious", "Total population"), bty="n",lwd=3,col=c("blue","red","green"))
+  legend("left",legend=c("Susceptible", "Infected", "Total population"), bty="n",lwd=3,col=c("blue","red","green"))
 Yield <- result[251,2] + (0.3* result[251,3])
 #Calculates a total crop yield at the end of the 250 day season using the final population of susceptible and infected
 print(paste("Total Yield of Cassava Crop:", round(Yield,digits = 0) , collapse = " ")) 
